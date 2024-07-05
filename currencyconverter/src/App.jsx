@@ -12,7 +12,7 @@ function App() {
   const options = Object.keys(currencyInfo);
 
   const convert = () => {
-    convertedAmount(amount * currencyInfo[to]);
+    setConvertedAmount(amount * currencyInfo[to]);
   };
 
   const swap = () => {
@@ -24,8 +24,7 @@ function App() {
 
   return (
     <div
-      className="w-full h-screen flex-wrap justify-center items-center bg-cover
-  bg-no-repeat"
+      className="w-full h-screen flex-wrap justify-center items-center bg-cover bg-no-repeat"
       style={{
         backgroundImage: `url(
           https://images.pexels.com/photos/20801620/pexels-photo-20801620.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2
@@ -70,9 +69,8 @@ function App() {
             </div>
             <button
               type="submit"
-              className="w-full bg-slate-400 text-white px-4 py-3 rounded-lg "
+              className="w-full bg-slate-400 text-white px-4 py-3 rounded-lg"
             >
-              {" "}
               Convert {from} to {to}
             </button>
           </form>
