@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { useState } from "react";
 import { useTodo } from "../contexts/TodoContext";
 
@@ -19,7 +20,7 @@ function TodoItem({ todo }) {
   return (
     <div
       className={`flex border duration-300 shadow-sm ${
-        todo.completed ? "bg-violet-300" : "bg-violet-700"
+        todo.completed ? "bg-gray-300" : "bg-slate-50"
       }`}
     >
       <input
@@ -48,7 +49,7 @@ function TodoItem({ todo }) {
         }}
         disabled={todo.completed}
       >
-        {isTodoEditable ? "☝️" : "👌"}
+        {isTodoEditable ? "👌" : "✏️"}
       </button>
       <button onClick={() => deleteTodo(todo.id)}>❌</button>
     </div>
