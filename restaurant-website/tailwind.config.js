@@ -6,7 +6,7 @@ export default {
       colors: {
         ligjtGray: "#758694",
         white2: "#FFF8F3",
-        darkNavy: "#F7E7DC",
+        darkNavy: "#405D72",
         creamBeige: "#F7E7DC",
       },
       fontFamily: {
